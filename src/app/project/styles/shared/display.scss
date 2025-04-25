@@ -1,0 +1,10 @@
+$displays: flex, grid, none, block;
+$start: 1;
+
+@for $index from $start to length($displays) + 1 {
+    $display: nth($displays, $index);
+
+    .d-#{$display} {
+        display: $display;
+    }
+}

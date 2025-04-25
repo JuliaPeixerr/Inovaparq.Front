@@ -1,0 +1,38 @@
+$simple-colors: (
+    'primary': #135e7c,
+    'secondary': #5392bd,
+    'xlighter-gray': #ece8e8, 
+    'lighter-gray': #d6d6d6,
+    'light-gray': #c5c5c5,
+    'gray': #a3a3a3,
+    'dark-gray': #636363,
+    'darkness-gray': #4c4c4c,
+    'dark': #262726,
+    'red': #ff4441,
+    'secondary-red': #bc1212,
+    'green': #9ff6a8,
+    'secondary-green': #1dba67,
+    'dark-green': #8eb15a,
+    'yellow': #f6f09f,
+    'dark-yellow': #dbd031,
+    'white': #fff,
+    'blue': #8ed4f5,
+    'brown': #636053,
+    'dark-blue': #4a74f4,
+    'orange': #fe9951
+);
+
+$background-form-colors: (
+    'blue': #c3d9f7,
+    'red': #fca3a3
+);
+
+@function get-simple-color($key) {
+    @return map-get($simple-colors, $key);
+}
+
+@each $key, $hex in $simple-colors {
+    .#{$key}-color {
+        color: $hex;
+    }
+}
