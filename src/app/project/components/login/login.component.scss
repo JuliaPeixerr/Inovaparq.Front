@@ -1,4 +1,4 @@
-@import '../../../styles/shared/colors.scss';
+@import '../../styles/shared/colors.scss';
 
 :host {
     display: block;
@@ -12,7 +12,7 @@
     justify-content: center;
     display: flex;
     background: get-simple-color('dark-blue') 
-        url('../../../../../assets/img/fundo-login.png');
+        url('../../../../assets/img/fundo-login.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
