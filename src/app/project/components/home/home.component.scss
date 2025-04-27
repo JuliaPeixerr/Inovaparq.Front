@@ -1,0 +1,17 @@
+@import '../../styles/shared/colors.scss';
+
+:host {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+}
+
+.background {
+    height: 100vh;
+    width: 100vw;
+    background-color: get-simple-color('background-primary');
+
+    .btn-group {
+        margin: 20px 20px;
+    }
+}
