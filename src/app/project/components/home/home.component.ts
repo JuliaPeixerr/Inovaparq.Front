@@ -6,6 +6,8 @@ import { Component } from "@angular/core";
     styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+    columns: any[] = [1,2,3,4];
+    cards: any[] = [1,2,3,4];
 
     constructor() { }
 }

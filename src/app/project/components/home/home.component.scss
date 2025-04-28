@@ -1,17 +1,72 @@
 @import '../../styles/shared/colors.scss';
 
 :host {
-    display: block;
     height: 100vh;
     width: 100vw;
 }
 
 .background {
-    height: 100vh;
-    width: 100vw;
     background-color: get-simple-color('background-primary');
 
-    .btn-group {
-        margin: 20px 20px;
+    .container {
+        margin: 0 10px;
+
+        .btn-group {
+            margin-top: 20px;
+        }
+    }
+
+    .dashboard {
+        padding: 1rem 10px;
+
+        &-column {
+            margin-bottom: 1rem;
+        }
+
+        &-card {
+            margin: 0.8rem;
+            background-color: get-simple-color('background-secondary');
+
+            &-header {
+                border-bottom: none;
+                background-color: get-simple-color('background-secondary');
+
+                .badge-count {
+                    background-color: get-simple-color('gray');
+                    color: get-simple-color('background-secondary');
+                }
+            }
+
+            &-content {
+                background-color: get-simple-color('background-secondary');
+
+                .dashboard-inner-card {
+                    margin: 13px;
+                }
+            }
+        }
+    }
+
+    .card-body {
+        padding-top: 0;
+    }
+
+    .card-title {
+        padding-top: 13px;
+    }
+
+    .btn-purple {
+        background-color: #8e44ad;
+        color: white;
+
+        &:hover {
+            background-color: #732d91;
+            color: white;
+        }
+    }
+
+    .badge-central {
+        background-color: get-simple-color('light-purple');
+        color: get-simple-color('purple');
     }
 }
