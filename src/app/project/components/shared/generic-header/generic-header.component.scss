@@ -8,6 +8,12 @@ nav {
     }
 
     .right-side i {
+        color: #ffff;
         font-size: 1.5rem;
+
+        &:hover {
+            cursor: pointer;
+            color: get-simple-color('gray');
+        }
     }
 }
