@@ -1,1 +1,1 @@
-// export const APIURL = "https://localhost:7067";
+export const APIURL = "https://localhost:7066";

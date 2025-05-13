@@ -5,11 +5,11 @@
         <h5 class="description shadow-text">novas ideias orbitam aqui</h5>
 
         <label for="basic-url" class="form-label top shadow-text">Usuário</label>
-        <input type="text" class="form-control shadow" placeholder="Digite seu usuário">
+        <input type="text" [(ngModel)]="nome" [ngModelOptions]="{standalone: true}" class="form-control shadow" placeholder="Digite seu usuário">
         <label for="basic-url" class="form-label top shadow-text">Senha</label>
-        <input type="password" class="form-control shadow" placeholder="Digite sua senha">
+        <input type="password" [(ngModel)]="senha" [ngModelOptions]="{standalone: true}" class="form-control shadow" placeholder="Digite sua senha">
 
-        <button type="button" class="btn btn-primary top shadow" (click)="navigateHome()">Entrar</button>
+        <button type="button" class="btn btn-primary top shadow" (click)="login()">Entrar</button>
     </div>
 
 </div>
