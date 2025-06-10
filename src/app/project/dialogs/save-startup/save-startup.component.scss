@@ -1,0 +1,15 @@
+@import '../../styles/shared/colors.scss';
+
+.background {
+    background-color: get-simple-color('background-primary');
+    color: #fff;
+}
+
+.header, .footer { 
+    background-color: get-simple-color('background-secondary');
+    color: #fff;
+}
+
+.btn-close {
+  filter: invert(1);
+}

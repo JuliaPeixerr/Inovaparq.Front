@@ -10,4 +10,8 @@ export class HomeComponent {
     cards: any[] = [1,2,3,4];
 
     constructor() { }
+
+    openCard(card: any) {
+        console.log('openning card', card);
+    }
 }

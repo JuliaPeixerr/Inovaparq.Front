@@ -1,0 +1,43 @@
+<div class="modal-header header">
+    <h5 class="modal-title">Editar Startup</h5>
+</div>
+<div class="modal-body background" data-bs-theme="dark">
+    <form>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input id="nome" type="text" class="form-control" placeholder="Digite o nome da startup">
+                </div>
+                <div class="mb-3">
+                    <label for="grupo" class="form-label">Grupo da startup</label>
+                    <select id="grupo" class="form-select">
+                        <option selected disabled>Selecione o grupo da startup</option>
+                        <option *ngFor="let grupo of grupos">{{ grupo }}</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="fundador" class="form-label">Fundador</label>
+                    <input id="fundador" type="text" class="form-control" placeholder="Digite o nome do fundador">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="descricao" class="form-label">Descrição</label>
+                    <textarea id="descricao" class="form-control" style="height: 124px;"
+                        placeholder="Digite a descrição da startup"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email de contato</label>
+                    <input id="email" type="email" class="form-control" placeholder="Digite o email de contato">
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="modal-footer footer">
+    <button type="button" class="btn btn-secondary" (click)="activeModal.dismiss()">Fechar</button>
+    <button type="button" class="btn btn-primary" (click)="salvar()">Salvar</button>
+</div>

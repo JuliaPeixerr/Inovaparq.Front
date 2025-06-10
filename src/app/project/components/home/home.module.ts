@@ -10,7 +10,7 @@ import { RouterModule } from "@angular/router";
     imports: [
         CommonModule,
         RouterModule,
-        GenericHeaderComponentModule
+        GenericHeaderComponentModule,
     ]
 })
 export class HomeComponentModule { }

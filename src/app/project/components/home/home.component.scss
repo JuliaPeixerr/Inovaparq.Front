@@ -8,28 +8,24 @@
 .background {
     background-color: get-simple-color('background-primary');
 
-    .container {
-        margin: 0 10px;
-
-        .btn-group {
-            margin-top: 20px;
-        }
-    }
-
     .dashboard {
-        padding: 1rem 10px;
+        padding: 2.5rem 20px;
+        display: flex;
+        justify-content: center;
+        place-self: center;
 
         &-column {
+            padding: 0;
             margin-bottom: 1rem;
         }
 
         &-card {
-            margin: 0.8rem;
+            margin: 0.3rem;
             background-color: get-simple-color('background-secondary');
 
             &-header {
+                border: 2px solid get-simple-color('background-secondary');
                 border-bottom: none;
-                background-color: get-simple-color('background-secondary');
 
                 .badge-count {
                     background-color: get-simple-color('gray');
@@ -38,7 +34,8 @@
             }
 
             &-content {
-                background-color: get-simple-color('background-secondary');
+                border: 2px solid get-simple-color('background-secondary');
+                border-top: none;
 
                 .dashboard-inner-card {
                     margin: 13px;
@@ -48,6 +45,8 @@
     }
 
     .card-body {
+        background-color: get-simple-color('background-secondary');
+        border-radius: 4px;
         padding-top: 0;
 
         &:hover {
