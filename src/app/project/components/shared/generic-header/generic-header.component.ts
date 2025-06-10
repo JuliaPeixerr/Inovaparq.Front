@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
+import { Router } from "@angular/router";
 import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
-import { SaveStartupDialog } from "src/app/project/dialogs/save-startup/save-startup.component";
 
 @Component({
     selector: 'generic-header',
@@ -9,10 +9,16 @@ import { SaveStartupDialog } from "src/app/project/dialogs/save-startup/save-sta
 })
 export class GenericHeaderComponent {
 
-    constructor(private modalService: NgbModal) { }
+    constructor(
+        private modalService: NgbModal,
+        private router: Router
+    ) { }
 
     save() {
-        this.modalService.open(SaveStartupDialog, 
-            { centered: true, size: 'lg' });
+
+    }
+
+    backHome() {
+        this.router.navigate(['/home']);
     }
 }

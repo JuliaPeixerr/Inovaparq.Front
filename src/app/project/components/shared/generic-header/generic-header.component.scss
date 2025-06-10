@@ -3,6 +3,10 @@
 nav {
     border-bottom: 1px solid get-simple-color('background-secondary');
 
+    .title:hover {
+        cursor: pointer;
+    }
+
     .middle-button {
         width: 300px;
     }

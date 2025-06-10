@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { Router } from "@angular/router";
 
 @Component({
     selector: 'home-component',
@@ -9,9 +10,12 @@ export class HomeComponent {
     columns: any[] = [1,2,3,4];
     cards: any[] = [1,2,3,4];
 
-    constructor() { }
+    constructor(
+        private router: Router
+    ) { }
 
     openCard(card: any) {
         console.log('openning card', card);
+        this.router.navigate(['/startup']);
     }
 }
